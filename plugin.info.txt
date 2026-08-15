@@ -1,0 +1,6 @@
+base   emlview
+author wonung
+email  gnoownow10@gmail.com
+date   2026-08-16
+name   emlview
+desc   A plugin for eml file

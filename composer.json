@@ -1,0 +1,6 @@
+{
+    "require": {
+        "vaibhavpandeyvpz/phemail": "^1.3",
+        "ezyang/htmlpurifier": "^4.18"
+    }
+}

@@ -1,0 +1,67 @@
+.emlview-error {
+	color: @ini_missing;
+}
+
+.emlview-subject {
+    font-size: 1.2em;
+}
+
+.emlview-download {
+    display: block;
+    width: fit-content;
+}
+
+.emlview-addresses {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 0.5em;
+    > :not(li:last-child)::after {
+        content: ', ';
+    }
+    > li {
+        color: @ini_text !important;
+        margin-inline: 0;
+    }
+}
+
+.emlview-attachments {
+    margin-block-start: 1em;
+    border-block-start: 1px solid @ini_text;
+    padding-block-start: 1em;
+    li {
+        color: @ini_text !important;
+    }
+}
+
+.emlview-container {
+    > * + * {
+        margin-top: 1em;
+    }
+    padding: 1em;
+    background-color: @ini_background_alt;
+    dl {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-gap: 0.5em;
+    }
+    dd {
+        margin-inline: 0;
+    }
+    p {
+        margin-block: 0;
+    }
+}
+
+.emlview-container[popover] {
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.emlview-content-text-plain {
+    white-space: pre-wrap;
+}
